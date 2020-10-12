@@ -1,4 +1,4 @@
-package model;
+package br.ufes.model;
 
 /**
  *
@@ -13,14 +13,14 @@ public class Morador {
     protected String telefoneResponsavel2;
     protected boolean representante;
 
-    public Morador(String nome, String apelido, String telefone, String linkRedeSocial, String telefoneResponsavel1, String telefoneResponsavel2, boolean representante) {
+    public Morador(String nome, String apelido, String telefone, String linkRedeSocial, String telefoneResponsavel1, String telefoneResponsavel2) {
         this.nome = nome;
         this.apelido = apelido;
         this.telefone = telefone;
         this.linkRedeSocial = linkRedeSocial;
         this.telefoneResponsavel1 = telefoneResponsavel1;
         this.telefoneResponsavel2 = telefoneResponsavel2;
-        this.representante = representante;
+        this.representante = false;
     }
 
     public String getNome() {
@@ -49,5 +49,14 @@ public class Morador {
 
     public boolean isRepresentante() {
         return representante;
+    }
+
+    public void setRepresentante(boolean representante) {
+        this.representante = representante;
+    }
+
+    @Override
+    public String toString() {
+        return "Morador{" + "nome=" + nome + ", apelido=" + apelido + ", telefone=" + telefone + ", linkRedeSocial=" + linkRedeSocial + ", telefoneResponsavel1=" + telefoneResponsavel1 + ", telefoneResponsavel2=" + telefoneResponsavel2 + ", representante=" + representante + '}';
     }
 }

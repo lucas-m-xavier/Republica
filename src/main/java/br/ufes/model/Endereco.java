@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package br.ufes.model;
 
-import model.enums.EnumUF;
+import br.ufes.enums.EnumUF;
 
 /**
  *
@@ -58,5 +58,10 @@ public class Endereco {
 
     public EnumUF getUf() {
         return uf;
+    }
+
+    @Override
+    public String toString() {
+        return "Endereco{" + "cep=" + cep + ", bairro=" + bairro + ", referencia=" + referencia + ", numero=" + numero + ", logradouro=" + logradouro + ", uf=" + uf + '}';
     }
 }

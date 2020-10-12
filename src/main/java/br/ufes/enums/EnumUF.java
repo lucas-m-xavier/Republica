@@ -1,4 +1,4 @@
-package model.enums;
+package br.ufes.enums;
 
 /**
  *
