@@ -14,8 +14,8 @@ public class Tarefa {
     protected LocalDate dataTermino;
     protected boolean finalizada;
 
-    public Tarefa(LocalDate dataAgendamento, ArrayList<Morador> moradores, String descricao, LocalDate dataTermino, boolean finalizada) {
-        this.dataAgendamento = dataAgendamento;
+    public Tarefa(ArrayList<Morador> moradores, String descricao, LocalDate dataTermino, boolean finalizada) {
+        this.dataAgendamento = LocalDate.now();
         this.moradores = moradores;
         this.descricao = descricao;
         this.dataTermino = dataTermino;
