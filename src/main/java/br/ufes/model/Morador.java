@@ -1,5 +1,7 @@
 package br.ufes.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Lucas
@@ -12,6 +14,7 @@ public class Morador {
     protected String telefoneResponsavel1;
     protected String telefoneResponsavel2;
     protected boolean representante;
+    protected ArrayList<HistoricoMorador> historico = new ArrayList<>();
 
     public Morador(String nome, String apelido, String telefone, String linkRedeSocial, String telefoneResponsavel1, String telefoneResponsavel2) {
         this.nome = nome;
@@ -51,6 +54,10 @@ public class Morador {
         return representante;
     }
 
+    public ArrayList<HistoricoMorador> getHistorico() {
+        return historico;
+    }
+
     public void setRepresentante(boolean representante) {
         this.representante = representante;
     }
@@ -59,6 +66,6 @@ public class Morador {
     public String toString() {
         return "Morador{" + "\nnome=" + nome + "\napelido=" + apelido + "\ntelefone=" + telefone + "\nlinkRedeSocial=" +
                 linkRedeSocial + "\ntelefoneResponsavel1=" + telefoneResponsavel1 + "\ntelefoneResponsavel2=" +
-                telefoneResponsavel2 + "\nrepresentante=" + representante + '}' + "\n";
+                telefoneResponsavel2 + "\nrepresentante=" + representante + "\nhistorico=\n" + historico + '}' + "\n";
     }
 }

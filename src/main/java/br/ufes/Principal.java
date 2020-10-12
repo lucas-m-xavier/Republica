@@ -30,7 +30,8 @@ public class Principal {
             //criando uma república com o m1 como representante e adicionando m5 a mesma
             Republica r1 = new Republica("Cachorrão", e1, "play5 e pebolin", 450.79, 6, m1);
             r1.addMorador(m5);
-            System.out.println(r1.toString());
+            //Removendo m5
+            r1.removerMorador(m5.getNome());
             
         }   catch (RuntimeException rte) {
             System.err.println("Falha: " + rte.getMessage());

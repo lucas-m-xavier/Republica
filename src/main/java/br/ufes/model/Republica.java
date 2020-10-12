@@ -66,7 +66,10 @@ public class Republica {
         if(!moradorEncontrado.isPresent()) {
             throw new RuntimeException("Morador " + nomeMorador + " não encontrado!");
         }
+        HistoricoMorador historico = new HistoricoMorador(this);
+        moradorEncontrado.get().getHistorico().add(historico);
         this.getMoradores().remove(moradorEncontrado.get());
+        this.vagasDisponiveis++;this.vagasOcupadas--;
     }
 
     public String getNome() {
