@@ -57,6 +57,8 @@ public class Morador {
 
     @Override
     public String toString() {
-        return "Morador{" + "nome=" + nome + ", apelido=" + apelido + ", telefone=" + telefone + ", linkRedeSocial=" + linkRedeSocial + ", telefoneResponsavel1=" + telefoneResponsavel1 + ", telefoneResponsavel2=" + telefoneResponsavel2 + ", representante=" + representante + '}';
+        return "Morador{" + "\nnome=" + nome + "\napelido=" + apelido + "\ntelefone=" + telefone + "\nlinkRedeSocial=" +
+                linkRedeSocial + "\ntelefoneResponsavel1=" + telefoneResponsavel1 + "\ntelefoneResponsavel2=" +
+                telefoneResponsavel2 + "\nrepresentante=" + representante + '}' + "\n";
     }
 }

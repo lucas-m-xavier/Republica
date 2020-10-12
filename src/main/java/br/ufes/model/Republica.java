@@ -2,7 +2,6 @@ package br.ufes.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -112,8 +111,9 @@ public class Republica {
 
     @Override
     public String toString() {
-        return "Republica{" + "nome=" + nome + ", fundacao=" + fundacao + ", extincao=" + extincao + ", endereco=" + endereco + ", vantagens=" + vantagens + ", despesaPorMorador=" + despesaPorMorador + ", vagas=" + vagas + ", vagasOcupadas=" + vagasOcupadas + ", vagasDisponiveis=" + vagasDisponiveis + ", moradores=" + moradores + '}';
+        return "Republica{\n" + "nome=" + nome + "\nfundacao=" + fundacao + "\nextincao=" + extincao + 
+                "\nendereco=" + endereco + "\nvantagens=" + vantagens + "\ndespesaPorMorador=" +
+                despesaPorMorador + "\nvagas=" + vagas + "\nvagasOcupadas=" + vagasOcupadas +
+                "\nvagasDisponiveis=" + vagasDisponiveis + "\nmoradores=\n" + moradores + '}' + "\n";
     }
-    
-    
 }
